@@ -138,8 +138,12 @@ header {
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: #fff;
-    margin: 48px auto 73px auto;
+    margin: 48px auto 0 auto;
     display: block;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
 }
 
 .order-button:hover,
@@ -184,15 +188,19 @@ header {
 .dark-blue-section {
     display: flex;
     justify-content: center;
+    padding: 188px 0;
 }
 
 .header-lead {
-    margin-top: 68px;
-    width: 496px;
+    max-width: 496px;
 }
 
 .header-liege {
     margin-bottom: 72px;
+}
+
+.advantages-section .header-liege {
+    visibility: hidden;
 }
 
 .advantages-list,
@@ -232,6 +240,7 @@ header {
     border-right: 1px solid #e7e9fc;
 }
 
+.advantages-section .header-laborer,
 .team-card-text .header-laborer,
 .product-card .header-laborer {
     margin-bottom: 8px;
