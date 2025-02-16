@@ -44,7 +44,7 @@ body {
 
 .container {
     max-width: 1158px;
-    padding: 0 0px;
+    padding: 0 15px;
     margin: 0 auto;
 }
 
@@ -154,7 +154,6 @@ header {
 .page-nav .link {
     font-weight: 500;
     color: #2e2f42;
-    padding-right: 40px;
 }
 
 .page-nav .link:hover,
@@ -165,20 +164,22 @@ header {
 }
 
 /* flex things header*/
-.header-flex-display, .address-container {
+.header-flex-display{
     display: flex;
 }
 
 .page-nav, .address-container {
     padding: 24px 0;
+    align-items: center;
 }
 
 .logo {
     margin-right: 76px;
 }
 
-.address {
-    padding-left: 40px;
+.address,
+.page-nav .link {
+    gap: 40px;
 }
 
 .address-container {
@@ -200,7 +201,7 @@ header {
 }
 
 .advantages-section .header-liege {
-    visibility: hidden;
+    display: hidden;
 }
 
 .advantages-list,
