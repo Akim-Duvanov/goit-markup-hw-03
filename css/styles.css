@@ -177,7 +177,7 @@ header {
     margin-right: 76px;
 }
 
-ul .header-flex-display {
+.header-flex-display ul {
     gap: 40px;
 }
 
@@ -203,8 +203,16 @@ ul .header-flex-display {
     margin-bottom: 72px;
 }
 
-.advantages-section .header-liege {
-    display: hidden;
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
 }
 
 .advantages-list,
