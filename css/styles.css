@@ -177,9 +177,12 @@ header {
     margin-right: 76px;
 }
 
-.address,
-.page-nav .link {
+ul .header-flex-display {
     gap: 40px;
+}
+
+.page-nav .link {
+    padding: 24px 0;
 }
 
 .address-container {
