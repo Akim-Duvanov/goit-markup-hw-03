@@ -6,6 +6,32 @@ ul {
     list-style: none;
 }
 
+img {
+    display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+main {
+    flex-grow: 1;
+}
+
 body {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
@@ -14,6 +40,20 @@ body {
     letter-spacing: 0.02em;
     color: #434455;
     background-color:#FFFFFF;
+}
+
+.container {
+    max-width: 1158px;
+    padding: 0 0px;
+    margin: 0 auto;
+}
+
+.section {
+    padding: 120px 0;
+}
+
+header {
+    border-bottom: 1px solid #e7e9fc;
 }
 
 .header-lead {
@@ -98,6 +138,8 @@ body {
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: #fff;
+    margin: 48px auto 73px auto;
+    display: block;
 }
 
 .order-button:hover,
@@ -108,6 +150,7 @@ body {
 .page-nav .link {
     font-weight: 500;
     color: #2e2f42;
+    padding-right: 40px;
 }
 
 .page-nav .link:hover,
@@ -115,4 +158,84 @@ body {
 .page-nav .link:focus,
 .address:focus {
     color: #404bbf;
+}
+
+/* flex things header*/
+.header-flex-display, .address-container {
+    display: flex;
+}
+
+.page-nav, .address-container {
+    padding: 24px 0;
+}
+
+.logo {
+    margin-right: 76px;
+}
+
+.address {
+    padding-left: 40px;
+}
+
+.address-container {
+    margin-left: 252px;
+}
+/*sections*/
+.dark-blue-section {
+    display: flex;
+    justify-content: center;
+}
+
+.header-lead {
+    margin-top: 68px;
+    width: 496px;
+}
+
+.header-liege {
+    margin-bottom: 72px;
+}
+
+.advantages-list,
+.team-list,
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.advantages-list-item,
+.team-card {
+    width: calc((100% - 72px) / 4);
+}
+
+.product-card {
+    width: calc((100% - 48px) / 3);
+}
+
+.advantages-list-item:not(:last-child),
+.team-card:not(:last-child) {
+    margin-right: 24px;
+}
+
+.team-card-text {
+    padding: 32px 16px;
+    text-align: center;
+}
+
+.product-list-text {
+    padding: 32px 16px;
+    border-bottom: 1px solid #e7e9fc;
+    border-left: 1px solid #e7e9fc;
+    border-right: 1px solid #e7e9fc;
+}
+
+.team-card-text .header-laborer {
+    margin-bottom: 8px;
+}
+
+.product-list {
+    gap: 48px 24px;
+}
+
+.footer {
+    padding: 100px 0;
 }
