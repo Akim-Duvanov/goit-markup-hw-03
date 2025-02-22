@@ -183,10 +183,11 @@ header {
 
 .page-nav .link {
     padding: 24px 0;
+    display: block;
 }
 
 .address-container {
-    margin-left: 252px;
+    margin-left: auto;
 }
 /*sections*/
 .dark-blue-section {
@@ -270,4 +271,8 @@ header {
 .footer .logo {
     display: inline-block;
     margin-bottom: 16px;
+}
+
+.footer .text {
+    max-width: 264px;
 }
